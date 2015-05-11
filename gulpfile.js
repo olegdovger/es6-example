@@ -34,7 +34,8 @@ gulp.task('browserSync', function () {
 
 gulp.task('watchFiles', function () {
   gulp.watch('src/index.html', ['copy']);
-  gulp.watch('src/**/*.js', ['modules']);
+  gulp.watch('src/**/*.js', ['build']);
+  gulp.watch('examples/**/*.js', ['build']);
 });
 
 gulp.task('clean', function () {
